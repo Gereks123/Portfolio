@@ -1,0 +1,55 @@
+/*Regular HTML syntax*/
+html,
+body {
+  font-size: 0.625rem;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+/*Classes*
+
+/
+
+
+/*Preloader classes, ID's*/
+
+.loader {
+  display: block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 150px;
+  height: 150px;
+  z-index: 1001;
+}
+
+/*This covers all of the content and is one z-index below the loader */
+.loader-wrapper {
+  z-index: 1000;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+}
+
+/*-----------------------------------------------------End of loader */
+
+/*Underneath the page lay the media queries*/
+
+/*Mobile*/
+@media only screen and (max-width: 600px) {
+}
+
+/*Tablet*/
+@media only screen and (min-width: 600px) and (max-width: 1320px) {
+}
