@@ -17,12 +17,36 @@ body {
   display: flex;
 }
 
+.whole-body {
+  display: none;
+}
+
 /*Classes*/
+
+/*Letter stlyes*/
+/*Move the image a bit higher*/
+.loader-wrapper img {
+  width: 65px;
+}
+
+.letter2 {
+  margin-bottom: 10px;
+  margin-left: -10px;
+}
 
 .state-before-load {
   display: none;
 }
 
+/*Place the preloader in the middle of the page*/
+.loader-wrapper {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+  z-index: 9999;
+}
 
 /*Preloader classes, ID's*/
 
