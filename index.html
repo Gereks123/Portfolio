@@ -5,14 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>German Eksi's Dungeon</title>
     <link rel="stylesheet" href="css/style.css" />
+
     <style></style>
   </head>
 
   <body>
     <!--Preloader-->
     <div class="loader-wrapper">
-      <img src="images/Preloader_G.svg" alt="" class="letter1" />
-      <img src="images/Preloader_E.svg" alt="" class="letter2" />
+      <div id="loader">
+        <img src="images/Preloader_G.svg" alt="" class="letter1" />
+        <img src="images/Preloader_E.svg" alt="" class="letter2" />
+      </div>
+
+      <div class="loader-section section-right"></div>
+      <div class="loader-section section-left"></div>
     </div>
     <!--Here is the nav bar-->
     <div class="whole-body">
@@ -39,16 +45,14 @@
         </nav>
       </header>
       <!--Here is the body-->
-      <main>
-        <div class="container">
-          <img
-            src="https://images.unsplash.com/photo-1612104846826-9b2336a59419?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1275&q=80"
-            alt=""
-            class="logo"
-            style="width: 100px"
-          />
-        </div>
-      </main>
+      <div class="container">
+        <img
+          src="https://images.unsplash.com/photo-1612104846826-9b2336a59419?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1275&q=80"
+          alt=""
+          class="logo"
+          style="width: 100px"
+        />
+      </div>
     </div>
     <!--GreenSock CDN-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>

@@ -20,12 +20,9 @@ tl.from(".letter2", {
 //Check out gsap common mistakes https://greensock.com/mistakes/
 //Display content when the page is loaded
 
-// show page function
-function showPage() {
-  document.body.classList.remove("state-before-load");
-}
-
-//Remove the styling when the page is loaded
-window.onload = (event) => {
-  showPage();
-};
+//Display content when loaded
+window.addEventListener("DOMContentLoaded", function () {
+  setTimeout(function () {
+    document.body.classList.add("loaded");
+  }, 1000);
+});
