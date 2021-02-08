@@ -1,19 +1,20 @@
 /*Regular HTML syntax*/
-html,
+/*Font that is being used*/
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
 body {
   font-size: 0.625rem;
-  width: 100%;
   margin: 0;
+  color: white;
+  width: 100%;
+  background-color: black;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 .container {
   width: 100%;
   height: 100%;
   display: flex;
-}
-
-.whole-body {
-  height: ;
 }
 
 /*Classes*/
@@ -43,7 +44,7 @@ body {
 /*Place the preloader in the middle of the page*/
 .loader-wrapper .loader-section {
   position: fixed;
-  background-color: black;
+  background-color: white;
   top: 0;
   height: 100%;
   justify-content: center;
@@ -54,6 +55,9 @@ body {
 }
 
 .loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
   height: 100%;
   width: 100%;
 }
@@ -88,7 +92,48 @@ body {
   opacity: 100;
   transition: all 0.3s ease-out;
 }
+/*****************************************************************/
+/*HERE IS THE NAV BAR*/
+.nav-placement {
+  height: 100%;
+}
 
+.menu_logo,
+.menu_items-link {
+  padding: 40px;
+}
+
+.menu_items-link a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+}
+
+.menu_items-link:active a {
+  text-decoration: underline;
+}
+
+.menu_logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 26px;
+}
+
+.menu_items {
+  display: flex;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+}
+
+/******************************************************/
 /* .loaded .loader-wrapper .loader-section.section-right,
 .loaded .loader-wrapper .loader-section.section-left {
   transition: all 0.3s 0.3s ease-out;
