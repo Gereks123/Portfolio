@@ -2,6 +2,11 @@
 /*Font that is being used*/
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
+html {
+  width: 100%;
+  margin: 0;
+}
+
 body {
   font-size: 0.625rem;
   margin: 0;
@@ -129,13 +134,17 @@ body {
 
 /*******************************************BODY*****************************************************/
 
-.container {
-  margin-top: 200px;
+.wrapper {
+  overflow-x: hidden;
+}
+
+.container-head {
+  margin-top: 250px;
   margin-left: 200px;
   display: flex;
 }
 
-.container img {
+.container-head img {
   max-width: 100%;
   max-height: 100%;
 }
@@ -143,7 +152,7 @@ body {
 .container_item {
   position: relative;
   width: 100%;
-  height: 360px;
+  height: 350px;
 }
 
 .container_item-head h1 {
@@ -210,17 +219,21 @@ body {
   /********************************NAV ENDS**************************************/
 
   /***********************************BODY*****************************************/
-  .container {
+  .container-head {
     margin-top: 350px;
     margin-left: 50px;
     z-index: -1;
   }
 
-  .container img {
+  .container-head img {
     position: relative;
     bottom: 450px;
     left: 30%;
     z-index: -1;
+  }
+
+  .container_name {
+    z-index: 10;
   }
 
   .container_item-head h1 {
@@ -230,6 +243,40 @@ body {
     height: 360px;
     font-size: 2rem;
   }
+
+  /*Body main*/
+
+  .container-body {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .container-body-head {
+    margin: 0 auto;
+    margin-top: 200px;
+  }
+
+  .container-body-item {
+  }
+
+  .container-content-1 {
+    margin-top: 1rem;
+    margin-left: 10px;
+    width: 100%;
+    max-width: 60%;
+    float: left;
+    font-size: 1.2rem;
+  }
+  .container-content-2 {
+    width: 100%;
+    max-width: 60%;
+    float: right;
+    font-size: 1.2rem;
+    margin-left: 10px;
+  }
+
+  /*End of body main*/
 
   /************************************BODY END***********************************/
 }
