@@ -244,12 +244,14 @@ body {
     font-size: 2rem;
   }
 
-  /*Body main*/
+  /*Body introduction part*/
 
-  .container-body {
+  .container-body-upper {
     display: flex;
     flex-direction: column;
     max-width: 100%;
+    line-height: 1.2;
+    font-size: 1.2rem;
   }
 
   .container-body-head {
@@ -257,27 +259,94 @@ body {
     margin-top: 200px;
   }
 
-  .container-body-item {
-  }
-
+ 
   .container-content-1 {
-    margin-top: 1rem;
+    margin-top: 4rem;
     margin-left: 10px;
     width: 100%;
-    max-width: 60%;
-    float: left;
-    font-size: 1.2rem;
+    max-width: 100%;
+    
   }
   .container-content-2 {
     width: 100%;
-    max-width: 60%;
-    float: right;
-    font-size: 1.2rem;
+    max-width: 100%;
     margin-left: 10px;
   }
 
-  /*End of body main*/
+  .container-content-3 {
+    margin-top: 4rem;
+    width: 100%;
+    max-width: 100%;
+  }
 
+  .container-content-middle{
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .container-content-right {
+    float: right;
+    margin-top: 4rem;
+    max-width: 60%;
+    margin-right: 1.5rem;
+    text-align: right;
+  }
+
+  .container-content-left {
+    text-align: left;
+    max-width: 60%;
+    float: left;
+    margin-left: 1.5rem;
+  }
+  
+  .container-content-button {
+    margin: 2rem auto;
+    
+  }
+
+
+
+  .container-content-button button {
+    text-decoration: none;
+    background-color: white;
+    height: 30px;
+    border: none;
+    border-radius: 2rem 2rem;
+    cursor: pointer;
+    width: 100px;
+    outline: none;
+    overflow: none;
+    transition: 0.25s; /*For button animation*/
+  }
+
+  .close a {
+   color: black; 
+  }
+  
+
+  .container-content-button a {
+    text-decoration: none;
+    font-family: "Bebas Neue", sans-serif;
+  }
+
+  /*End of body introduction part*/
+
+
+  /*Start of body main*/
+  .container-body-main {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    line-height: 1.2;
+  }
+
+  .container-body-main-head {
+    font-size: 1rem;
+    margin: 4rem  auto;
+  }
+
+  /*End of body main*/
   /************************************BODY END***********************************/
 }
 
