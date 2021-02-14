@@ -1,4 +1,5 @@
-const tl = gsap.timeline({ yoyo: true, repeat: -1 }); //repeat -1 makes it an infinite loop
+gsap.registerPlugin(ScrollTrigger);
+let tl = gsap.timeline({ yoyo: true, repeat: -1 }); //repeat -1 makes it an infinite loop
 //gsap stagger delays the function
 //Letter "G" animation
 tl.from(".letter1", {
@@ -20,7 +21,17 @@ tl.from(".letter2", {
 
 //Check out gsap DOC https://greensock.com/docs/v3/GSAP
 //Check out gsap common mistakes https://greensock.com/mistakes/
-//Display content when the page is loaded
+
+//Animating with ScrollTrigger
+
+let back = gsap.timeline({
+  //This needs to be finished, create like a "snake" going between the text in introduction
+  scrollTrigger: {
+    trigger: ".container-body-head",
+    start: "top center",
+    end: "top top",
+  },
+});
 
 //Display content when loaded
 window.addEventListener("DOMContentLoaded", function () {

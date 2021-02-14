@@ -259,13 +259,11 @@ body {
     margin-top: 200px;
   }
 
- 
   .container-content-1 {
     margin-top: 4rem;
     margin-left: 10px;
     width: 100%;
     max-width: 100%;
-    
   }
   .container-content-2 {
     width: 100%;
@@ -279,7 +277,7 @@ body {
     max-width: 100%;
   }
 
-  .container-content-middle{
+  .container-content-middle {
     max-width: 80%;
     margin: 0 auto;
     text-align: center;
@@ -299,13 +297,10 @@ body {
     float: left;
     margin-left: 1.5rem;
   }
-  
+
   .container-content-button {
     margin: 2rem auto;
-    
   }
-
-
 
   .container-content-button button {
     text-decoration: none;
@@ -321,9 +316,8 @@ body {
   }
 
   .close a {
-   color: black; 
+    color: black;
   }
-  
 
   .container-content-button a {
     text-decoration: none;
@@ -331,7 +325,6 @@ body {
   }
 
   /*End of body introduction part*/
-
 
   /*Start of body main*/
   .container-body-main {
@@ -343,10 +336,41 @@ body {
 
   .container-body-main-head {
     font-size: 1rem;
-    margin: 4rem  auto;
+    margin: 4rem auto;
+  }
+
+  .project-1,
+  .project-2,
+  .project-3,
+  .project-4 {
+    width: 100%;
+    max-width: 90%;
+    height: 300px;
+    margin: 0 auto;
+    background-color: white;
+    margin-top: 50px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-content img {
+    width: 100%;
+    max-width: 90%;
+    max-height: 10rem;
+    object-fit: cover; /*Make the image to cover size*/
+  }
+
+  .project-content {
+    text-align: center;
+  }
+
+  .project-head {
+    text-align: center;
   }
 
   /*End of body main*/
+
   /************************************BODY END***********************************/
 }
 
