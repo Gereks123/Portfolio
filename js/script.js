@@ -17,6 +17,30 @@ tl.from(".letter2", {
   opacity: 100,
 });
 
+//End of the letter animations
+
+/*Projects fadeout animation*/
+let fade = gsap.utils.toArray(".project");
+
+fade.forEach((project, i) => {
+  ScrollTrigger.create({
+    start: "top center",
+    trigger: project,
+    toggleClass: "active",
+    toggleActions: "play none none none", //first value reacts when the selected object is in the view of the viewer.
+  });
+});
+
+/*This is not working YET!!!!!*/
+gsap.utils.toArray("button").forEach((button) => {
+  let hover = gsap.to(".close", {
+    backgroundColor: "white",
+  });
+  button.addEventListener("mouseenter", () => hover.play());
+  button.addEventListener("mouseleave", () => hover.reverse());
+});
+
+/*End of projects animation*/
 //Animating the letters in the container
 
 //Check out gsap DOC https://greensock.com/docs/v3/GSAP
@@ -24,18 +48,20 @@ tl.from(".letter2", {
 
 //Animating with ScrollTrigger
 
-let back = gsap.timeline({
+/* let back = gsap.timeline({
   //This needs to be finished, create like a "snake" going between the text in introduction
   scrollTrigger: {
     trigger: ".container-body-head",
     start: "top center",
     end: "top top",
   },
-});
+}); */
 
 //Display content when loaded
 window.addEventListener("DOMContentLoaded", function () {
   setTimeout(function () {
-    document.body.classList.add("loaded");
+    document.body.classList.remove("stop-scroll"); //Now can scroll when page is loaded
+    document.body.classList.add("loaded"); 
+    gsap.from("#container-image", { x: 250, duration: 2, opacity: 0 }); //animation for the image to appear
   }, 1000);
 });
