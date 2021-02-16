@@ -7,7 +7,7 @@
     <title>German Eksi's Dungeon</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
+  <body data-barbara="wrapper">
     <div class="nav-placement">
       <header>
         <nav class="menu">
@@ -29,17 +29,20 @@
       </header>
     </div>
     <!--Here is the outlay for the about me page-->
-    <div class="about-container">
-      <p class="about-container-info">
-        Sup! I'm <span>German</span>, I swear I'm not from Germany! I'm a
-        software developer, who really loves his job!
-      </p>
-
-      <!--ADD HERE MORE TEXT ABOUT YOURSELF!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+    <div data-barbara="container" data-barba-namespace="about">
+      <div class="about-container">
+        <p class="about-container-info">
+          Sup! I'm <span>German</span>, I swear I'm not from Germany! I'm a
+          software developer, who really loves his job!
+        </p>
+  
+        <!--ADD HERE MORE TEXT ABOUT YOURSELF!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+      </div>
+      <div class="cursor-follow"></div>
     </div>
-    <div class="cursor-follow"></div>
     <!--GreenSock CDN-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
-    <script src="js/script.js"></script>
+    <!--Barba JS-->
+    <script src="js/barba.js"></script>
   </body>
 </html>

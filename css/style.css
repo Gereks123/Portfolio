@@ -134,7 +134,6 @@ body {
   display: flex;
   justify-content: space-between;
   max-width: 100%;
-  background-color: black;
   z-index: 999;
 }
 
@@ -248,6 +247,7 @@ body {
 
   #container-image {
     opacity: 1;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
 
   .container_item-head h1 {
