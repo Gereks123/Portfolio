@@ -9,7 +9,7 @@
     <style></style>
   </head>
 
-  <body class="stop-scroll">
+  <body class="stop-scroll" data-barba="wrapper">
     <div class="wrapper">
       <!--Preloader-->
       <div class="loader-wrapper">
@@ -21,10 +21,20 @@
         <div class="loader-section section-right"></div>
         <div class="loader-section section-left"></div>
       </div>
+
+      <!--Transitions between the pages-->
+      <ul class="transition">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+
       <!--Here is the nav bar-->
       <div class="nav-placement">
         <header>
-          <nav class="menu">
+          <ul class="menu">
             <div class="menu_logo">
               <a href="index.html">GE</a>
             </div>
@@ -39,146 +49,152 @@
                 <a href="about.html">About</a>
               </div>
             </div>
-          </nav>
+          </ul>
         </header>
       </div>
       <!--Here is the body head-->
-      <div class="container-head" id="head" name="head">
-        <div class="container_item container_item-head">
-          <h1 class="container_name">
-            <span
-              >German Eksi, <br />
-              software developer</span
-            >
-          </h1>
-          <img
-            src="https://images.unsplash.com/photo-1453396450673-3fe83d2db2c4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1234&q=80"
-            alt=""
-            id="container-image"
-          />
+      <div data-barba="container" data-barba-namespace="home">
+        <div class="container-head" id="head" name="head">
+          <div class="container_item container_item-head">
+            <h1 class="container_name">
+              <span
+                >German Eksi, <br />
+                software developer</span
+              >
+            </h1>
+            <img
+              src="https://images.unsplash.com/photo-1453396450673-3fe83d2db2c4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1234&q=80"
+              alt=""
+              id="container-image"
+            />
+          </div>
+        </div>
+        <!--Here is the main page introduction-->
+        <div
+          class="container-body-upper"
+          id="container_body"
+          name="container_body"
+        >
+          <div class="container-body-head">
+            <h1>Who even am I?</h1>
+          </div>
+          <div class="container-content-1">
+            <div class="container-content-middle">
+              <p>
+                In case you missed the <span>BIG</span> introduction and managed
+                not to see my name, my name Is German! <br />
+                Really nice to meet you!
+              </p>
+            </div>
+          </div>
+          <div class="container-content-2">
+            <div class="container-content-right">
+              <p>
+                I am a man with many faces. During daytime I mainly write / learn
+                code, I also really enjoy reading a good book and do sports!
+                Aaaand during the night I sleep....
+              </p>
+            </div>
+          </div>
+          <div class="container-content-3">
+            <div class="container-content-left">
+              <p>
+                I'm a student In Tartu Vocational Education Center, i'm currently
+                studying to become a junior software developer. <br />
+                It fascinates me what we can achieve with just 0's and 1's running
+                in the background.<br />
+              </p>
+            </div>
+          </div>
+          <div class="container-content-button">
+            <button class="close"><a href="about.html">about me</a></button>
+          </div>
+        </div>
+        <!--Here is the body main part-->
+        <div class="container-body-main">
+          <div class="container-body-main-head">
+            <h1>My projects</h1>
+          </div>
+          <!--Project 1-->
+          <div class="project project-1">
+            <!--Project head-->
+            <div class="project-head">
+              <h1>Hellik webpage</h1>
+            </div>
+            <!--Project content-->
+            <div class="project-content">
+              <img
+                src="https://images.unsplash.com/photo-1613141276543-74107d388095?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+                alt="first image of German Eksi projects"
+              />
+              <button class="close-1"><a href="">Check it out!</a></button>
+            </div>
+          </div>
+          <!--Project 2-->
+          <div class="project project-2">
+            <!--Project head-->
+            <div class="project-head">
+              <h1>Dice Rolling game</h1>
+            </div>
+            <!--Project content-->
+            <div class="project-content">
+              <img
+                src="https://images.unsplash.com/photo-1613141276543-74107d388095?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+                alt="first image of German Eksi projects"
+              />
+              <button class="close-1"><a href="">Check it out!</a></button>
+            </div>
+            <img src="" alt="" />
+          </div>
+          <!--Project 3-->
+          <div class="project project-3">
+            <!--Project head-->
+            <div class="project-head">
+              <h1>Drum Kit</h1>
+            </div>
+            <!--Project content-->
+            <div class="project-content">
+              <img
+                src="https://images.unsplash.com/photo-1613141276543-74107d388095?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+                alt="first image of German Eksi projects"
+              />
+              <button class="close-1"><a href="">Check it out!</a></button>
+            </div>
+            <img src="" alt="" />
+          </div>
+          <!--Project 4-->
+          <div class="project project-4">
+            <!--Project head-->
+            <div class="project-head">
+              <h1>My speciality introduction webpage</h1>
+            </div>
+            <!--Project content-->
+            <div class="project-content">
+              <img
+                src="https://images.unsplash.com/photo-1613141276543-74107d388095?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+                alt="first image of German Eksi projects"
+              />
+              <button class="close-1"><a href="">Check it out!</a></button>
+            </div>
+            <img src="" alt="" />
+          </div>
+        </div>
+        <!--Here is my skill review part-->
+        <div class="container-body-end">
+          <div class="container-body-end-head">
+            <h1>My Skills</h1>
+          </div>
         </div>
       </div>
-      <!--Here is the main page introduction-->
-      <div
-        class="container-body-upper"
-        id="container_body"
-        name="container_body"
-      >
-        <div class="container-body-head">
-          <h1>Who even am I?</h1>
-        </div>
-        <div class="container-content-1">
-          <div class="container-content-middle">
-            <p>
-              In case you missed the <span>BIG</span> introduction and managed
-              not to see my name, my name Is German! <br />
-              Really nice to meet you!
-            </p>
-          </div>
-        </div>
-        <div class="container-content-2">
-          <div class="container-content-right">
-            <p>
-              I am a man with many faces. During daytime I mainly write / learn
-              code, I also really enjoy reading a good book and do sports!
-              Aaaand during the night I sleep....
-            </p>
-          </div>
-        </div>
-        <div class="container-content-3">
-          <div class="container-content-left">
-            <p>
-              I'm a student In Tartu Vocational Education Center, i'm currently
-              studying to become a junior software developer. <br />
-              It fascinates me what we can achieve with just 0's and 1's running
-              in the background.<br />
-            </p>
-          </div>
-        </div>
-        <div class="container-content-button">
-          <button class="close"><a href="about.html">about me</a></button>
-        </div>
+  
       </div>
-      <!--Here is the body main part-->
-      <div class="container-body-main">
-        <div class="container-body-main-head">
-          <h1>My projects</h1>
-        </div>
-        <!--Project 1-->
-        <div class="project project-1">
-          <!--Project head-->
-          <div class="project-head">
-            <h1>Hellik webpage</h1>
-          </div>
-          <!--Project content-->
-          <div class="project-content">
-            <img
-              src="https://images.unsplash.com/photo-1613141276543-74107d388095?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
-              alt="first image of German Eksi projects"
-            />
-            <button class="close-1"><a href="">Check it out!</a></button>
-          </div>
-        </div>
-        <!--Project 2-->
-        <div class="project project-2">
-          <!--Project head-->
-          <div class="project-head">
-            <h1>Dice Rolling game</h1>
-          </div>
-          <!--Project content-->
-          <div class="project-content">
-            <img
-              src="https://images.unsplash.com/photo-1613141276543-74107d388095?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
-              alt="first image of German Eksi projects"
-            />
-            <button class="close-1"><a href="">Check it out!</a></button>
-          </div>
-          <img src="" alt="" />
-        </div>
-        <!--Project 3-->
-        <div class="project project-3">
-          <!--Project head-->
-          <div class="project-head">
-            <h1>Drum Kit</h1>
-          </div>
-          <!--Project content-->
-          <div class="project-content">
-            <img
-              src="https://images.unsplash.com/photo-1613141276543-74107d388095?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
-              alt="first image of German Eksi projects"
-            />
-            <button class="close-1"><a href="">Check it out!</a></button>
-          </div>
-          <img src="" alt="" />
-        </div>
-        <!--Project 4-->
-        <div class="project project-4">
-          <!--Project head-->
-          <div class="project-head">
-            <h1>My speciality introduction webpage</h1>
-          </div>
-          <!--Project content-->
-          <div class="project-content">
-            <img
-              src="https://images.unsplash.com/photo-1613141276543-74107d388095?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
-              alt="first image of German Eksi projects"
-            />
-            <button class="close-1"><a href="">Check it out!</a></button>
-          </div>
-          <img src="" alt="" />
-        </div>
-      </div>
-      <!--Here is my skill review part-->
-      <div class="container-body-end">
-        <div class="container-body-end-head">
-          <h1>My Skills</h1>
-        </div>
-      </div>
-    </div>
-
+    <!-- Barba.js -->
+  <script src="https://unpkg.com/@barba/core"></script>
     <!--GreenSock CDN-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <!--GreenSock ScrollTrigger-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+    <!--Regulars JS -->
     <script src="js/script.js"></script>
   </body>
 </html>

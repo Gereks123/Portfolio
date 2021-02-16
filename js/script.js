@@ -60,7 +60,7 @@ gsap.utils.toArray("button").forEach((button) => {
 //Display content when loaded
 window.addEventListener("DOMContentLoaded", function () {
   setTimeout(function () {
-    document.body.classList.remove("stop-scroll"); //Now can scroll when page is loaded
+    document.body.classList.remove("stop-scroll"); //Removes scroll lock when page is loaded. 
     document.body.classList.add("loaded"); 
     gsap.from("#container-image", { x: 250, duration: 2, opacity: 0 }); //animation for the image to appear
   }, 1000);

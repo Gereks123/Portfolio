@@ -134,6 +134,8 @@ body {
   display: flex;
   justify-content: space-between;
   max-width: 100%;
+  background-color: black;
+  z-index: 999;
 }
 
 /******************************************************/
