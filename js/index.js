@@ -1,3 +1,4 @@
+'use strict';
 gsap.registerPlugin(ScrollTrigger);
 let tl = gsap.timeline({ yoyo: true, repeat: -1 }); //repeat -1 makes it an infinite loop
 //gsap stagger delays the function
@@ -32,13 +33,13 @@ fade.forEach((project, i) => {
 });
 
 /*This is not working YET!!!!!*/
-gsap.utils.toArray("button").forEach((button) => {
-  let hover = gsap.to(".close", {
-    backgroundColor: "white",
-  });
-  button.addEventListener("mouseenter", () => hover.play());
-  button.addEventListener("mouseleave", () => hover.reverse());
-});
+//gsap.utils.toArray("button").forEach((button) => {
+  //let hover = gsap.to(".close", {
+    //backgroundColor: "white",
+  //});
+  //button.addEventListener("mouseenter", () => hover.play());
+  //button.addEventListener("mouseleave", () => hover.reverse());
+//});
 
 /*End of projects animation*/
 //Animating the letters in the container
