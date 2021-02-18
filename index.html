@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>German Eksi's Dungeon</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/barba.css" />
 
-    <style></style>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>German Eksi's Dungeon</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/barba.css" />
 
-  <body class="stop-scroll" data-barba="wrapper">
-    <div class="wrapper">
-      <!--Preloader-->
-      <div class="loader-wrapper">
-        <div id="loader">
-          <img src="images/Preloader_G.svg" alt="" class="letter1" />
-          <img src="images/Preloader_E.svg" alt="" class="letter2" />
-        </div>
-        <!--Shifts to blocks to the sides to reveal main page-->
-        <div class="loader-section section-right"></div>
-        <div class="loader-section section-left"></div>
+  <style></style>
+</head>
+
+<body class="stop-scroll" data-barba="wrapper">
+  <div class="wrapper">
+    <!--Preloader-->
+    <div class="loader-wrapper">
+      <div id="loader">
+        <img src="images/Preloader_G.svg" alt="" class="letter1" />
+        <img src="images/Preloader_E.svg" alt="" class="letter2" />
       </div>
+      <!--Shifts to blocks to the sides to reveal main page-->
+      <div class="loader-section section-right"></div>
+      <div class="loader-section section-left"></div>
+    </div>
 
-      <!--Transitions between the pages-->
+    <!--Transitions between the pages-->
+    <div class="align-to-top">
       <ul class="transition">
         <li></li>
         <li></li>
@@ -31,172 +33,162 @@
         <li></li>
         <li></li>
       </ul>
+    </div>
 
-      <!--Here is the nav bar-->
-      <div class="nav-placement">
-        <header>
-          <ul class="menu">
-            <div class="menu_logo">
-              <a href="index.html" class="cta">GE</a>
+    <!--Here is the nav bar-->
+    <div class="nav-placement">
+      <header>
+        <ul class="menu">
+          <div class="menu_logo">
+            <a href="index.html" class="prevent">GE</a>
+          </div>
+          <div class="menu_items">
+            <div class="menu_items-link">
+              <a href="index.html" class="prevent">Main page</a>
             </div>
-            <div class="menu_items">
-              <div class="menu_items-link">
-                <a href="index.html">Main page</a>
-              </div>
-              <div class="menu_items-link">
-                <a href="projects.html">Projects</a>
-              </div>
-              <div class="menu_items-link active">
-                <a href="about.html">About</a>
-              </div>
+            <div class="menu_items-link">
+              <a href="projects.html" class="prevent">Projects</a>
             </div>
-          </ul>
-        </header>
+            <div class="menu_items-link active">
+              <a href="about.html">About</a>
+            </div>
+          </div>
+        </ul>
+      </header>
+    </div>
+    <!--Here is the body head-->
+    <div data-barba="container" data-barba-namespace="home">
+      <div class="container-head" id="head" name="head">
+        <div class="container_item container_item-head">
+          <h1 class="container_name">
+            <span>German Eksi, <br />
+              software developer</span>
+          </h1>
+          <img
+            src="https://images.unsplash.com/photo-1453396450673-3fe83d2db2c4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1234&q=80"
+            alt="" class="container-image" />
+        </div>
       </div>
-      <!--Here is the body head-->
-      <div data-barba="container" data-barba-namespace="home">
-        <div class="container-head" id="head" name="head">
-          <div class="container_item container_item-head">
-            <h1 class="container_name">
-              <span
-                >German Eksi, <br />
-                software developer</span
-              >
-            </h1>
+      <!--Here is the main page introduction-->
+      <div class="container-body-upper" id="container_body" name="container_body">
+        <div class="container-body-head">
+          <h1>Who even am I?</h1>
+        </div>
+        <div class="container-content-1">
+          <div class="container-content-middle">
+            <p>
+              In case you missed the <span>BIG</span> introduction and managed
+              not to see my name, my name Is German! <br />
+              Really nice to meet you!
+            </p>
+          </div>
+        </div>
+        <div class="container-content-2">
+          <div class="container-content-right">
+            <p>
+              I am a man with many faces. During daytime I mainly write / learn
+              code, I also really enjoy reading a good book and do sports!
+              Aaaand during the night I sleep....
+            </p>
+          </div>
+        </div>
+        <div class="container-content-3">
+          <div class="container-content-left">
+            <p>
+              I'm a student In Tartu Vocational Education Center, i'm currently
+              studying to become a junior software developer. <br />
+              It fascinates me what we can achieve with just 0's and 1's running
+              in the background.<br />
+            </p>
+          </div>
+        </div>
+        <div class="container-content-button">
+          <button class="close"><a href="about.html">about me</a></button>
+        </div>
+      </div>
+      <!--Here is the body main part-->
+      <div class="container-body-main">
+        <div class="container-body-main-head">
+          <h1>My projects</h1>
+        </div>
+        <!--Project 1-->
+        <div class="project project-1">
+          <!--Project head-->
+          <div class="project-head">
+            <h1>Hellik webpage</h1>
+          </div>
+          <!--Project content-->
+          <div class="project-content">
             <img
-              src="https://images.unsplash.com/photo-1453396450673-3fe83d2db2c4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1234&q=80"
-              alt=""
-              id="container-image"
-            />
+              src="https://images.unsplash.com/photo-1613141276543-74107d388095?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+              alt="first image of German Eksi projects" />
+            <button class="close-1"><a href="">Check it out!</a></button>
           </div>
         </div>
-        <!--Here is the main page introduction-->
-        <div
-          class="container-body-upper"
-          id="container_body"
-          name="container_body"
-        >
-          <div class="container-body-head">
-            <h1>Who even am I?</h1>
+        <!--Project 2-->
+        <div class="project project-2">
+          <!--Project head-->
+          <div class="project-head">
+            <h1>Dice Rolling game</h1>
           </div>
-          <div class="container-content-1">
-            <div class="container-content-middle">
-              <p>
-                In case you missed the <span>BIG</span> introduction and managed
-                not to see my name, my name Is German! <br />
-                Really nice to meet you!
-              </p>
-            </div>
+          <!--Project content-->
+          <div class="project-content">
+            <img
+              src="https://images.unsplash.com/photo-1613141276543-74107d388095?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+              alt="first image of German Eksi projects" />
+            <button class="close-1"><a href="">Check it out!</a></button>
           </div>
-          <div class="container-content-2">
-            <div class="container-content-right">
-              <p>
-                I am a man with many faces. During daytime I mainly write / learn
-                code, I also really enjoy reading a good book and do sports!
-                Aaaand during the night I sleep....
-              </p>
-            </div>
-          </div>
-          <div class="container-content-3">
-            <div class="container-content-left">
-              <p>
-                I'm a student In Tartu Vocational Education Center, i'm currently
-                studying to become a junior software developer. <br />
-                It fascinates me what we can achieve with just 0's and 1's running
-                in the background.<br />
-              </p>
-            </div>
-          </div>
-          <div class="container-content-button">
-            <button class="close"><a href="about.html">about me</a></button>
-          </div>
+          <img src="" alt="" />
         </div>
-        <!--Here is the body main part-->
-        <div class="container-body-main">
-          <div class="container-body-main-head">
-            <h1>My projects</h1>
+        <!--Project 3-->
+        <div class="project project-3">
+          <!--Project head-->
+          <div class="project-head">
+            <h1>Drum Kit</h1>
           </div>
-          <!--Project 1-->
-          <div class="project project-1">
-            <!--Project head-->
-            <div class="project-head">
-              <h1>Hellik webpage</h1>
-            </div>
-            <!--Project content-->
-            <div class="project-content">
-              <img
-                src="https://images.unsplash.com/photo-1613141276543-74107d388095?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
-                alt="first image of German Eksi projects"
-              />
-              <button class="close-1"><a href="">Check it out!</a></button>
-            </div>
+          <!--Project content-->
+          <div class="project-content">
+            <img
+              src="https://images.unsplash.com/photo-1613141276543-74107d388095?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+              alt="first image of German Eksi projects" />
+            <button class="close-1"><a href="">Check it out!</a></button>
           </div>
-          <!--Project 2-->
-          <div class="project project-2">
-            <!--Project head-->
-            <div class="project-head">
-              <h1>Dice Rolling game</h1>
-            </div>
-            <!--Project content-->
-            <div class="project-content">
-              <img
-                src="https://images.unsplash.com/photo-1613141276543-74107d388095?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
-                alt="first image of German Eksi projects"
-              />
-              <button class="close-1"><a href="">Check it out!</a></button>
-            </div>
-            <img src="" alt="" />
-          </div>
-          <!--Project 3-->
-          <div class="project project-3">
-            <!--Project head-->
-            <div class="project-head">
-              <h1>Drum Kit</h1>
-            </div>
-            <!--Project content-->
-            <div class="project-content">
-              <img
-                src="https://images.unsplash.com/photo-1613141276543-74107d388095?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
-                alt="first image of German Eksi projects"
-              />
-              <button class="close-1"><a href="">Check it out!</a></button>
-            </div>
-            <img src="" alt="" />
-          </div>
-          <!--Project 4-->
-          <div class="project project-4">
-            <!--Project head-->
-            <div class="project-head">
-              <h1>My speciality introduction webpage</h1>
-            </div>
-            <!--Project content-->
-            <div class="project-content">
-              <img
-                src="https://images.unsplash.com/photo-1613141276543-74107d388095?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
-                alt="first image of German Eksi projects"
-              />
-              <button class="close-1"><a href="">Check it out!</a></button>
-            </div>
-            <img src="" alt="" />
-          </div>
+          <img src="" alt="" />
         </div>
-        <!--Here is my skill review part-->
-        <div class="container-body-end">
-          <div class="container-body-end-head">
-            <h1>My Skills</h1>
+        <!--Project 4-->
+        <div class="project project-4">
+          <!--Project head-->
+          <div class="project-head">
+            <h1>My speciality introduction webpage</h1>
           </div>
+          <!--Project content-->
+          <div class="project-content">
+            <img
+              src="https://images.unsplash.com/photo-1613141276543-74107d388095?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+              alt="first image of German Eksi projects" />
+            <button class="close-1"><a href="">Check it out!</a></button>
+          </div>
+          <img src="" alt="" />
         </div>
       </div>
+      <!--Here is my skill review part-->
+      <div class="container-body-end">
+        <div class="container-body-end-head">
+          <h1>My Skills</h1>
+        </div>
+      </div>
+    </div>
 
-      <!--GreenSock CDN-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
-      <!--GreenSock ScrollTrigger-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
-      <!-- Barba.js -->
-      <script src="https://unpkg.com/@barba/core"></script>
+    <!--GreenSock CDN-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <!--GreenSock ScrollTrigger-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+    <!-- Barba.js -->
+    <script src="https://unpkg.com/@barba/core"></script>
     <!--Regular JS -->
     <script src="js/index.js" type="text/javascript"></script>
     <!--Barba page animation JS -->
     <script src="js/barba.js" type="text/javascript"></script>
-  </body>
+</body>
+
 </html>

@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 gsap.registerPlugin(ScrollTrigger);
 let tl = gsap.timeline({ yoyo: true, repeat: -1 }); //repeat -1 makes it an infinite loop
 //gsap stagger delays the function
@@ -32,13 +32,15 @@ fade.forEach((project, i) => {
   });
 });
 
+/*Prevent links from redirecting*/
+
 /*This is not working YET!!!!!*/
 //gsap.utils.toArray("button").forEach((button) => {
-  //let hover = gsap.to(".close", {
-    //backgroundColor: "white",
-  //});
-  //button.addEventListener("mouseenter", () => hover.play());
-  //button.addEventListener("mouseleave", () => hover.reverse());
+//let hover = gsap.to(".close", {
+//backgroundColor: "white",
+//});
+//button.addEventListener("mouseenter", () => hover.play());
+//button.addEventListener("mouseleave", () => hover.reverse());
 //});
 
 /*End of projects animation*/
@@ -61,8 +63,8 @@ fade.forEach((project, i) => {
 //Display content when loaded
 window.addEventListener("DOMContentLoaded", function () {
   setTimeout(function () {
-    document.body.classList.remove("stop-scroll"); //Removes scroll lock when page is loaded. 
-    document.body.classList.add("loaded"); 
+    document.body.classList.remove("stop-scroll"); //Removes scroll lock when page is loaded.
+    document.body.classList.add("loaded");
     //gsap.from("#container-image", { x: 250, duration: 2, opacity: 0 }); //animation for the image to appear
   }, 1000);
 });

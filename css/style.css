@@ -245,11 +245,6 @@ body {
     margin-top: 5.5rem;
   }
 
-  #container-image {
-    opacity: 1;
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-  }
-
   .container_item-head h1 {
     position: relative;
     bottom: -40px;
