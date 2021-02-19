@@ -25,6 +25,6 @@ ul.transition li {
 
 /*For the image to appear*/
 .container-image {
-  opacity: 1;
+  opacity: 0;
   clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
 }

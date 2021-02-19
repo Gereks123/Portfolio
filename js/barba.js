@@ -1,3 +1,6 @@
+//Register GSAP ScrollTrigger
+gsap.registerPlugin(ScrollTrigger);
+
 //First init barba
 
 function pageTransition() {
@@ -34,9 +37,27 @@ function contentAnimation() {
   let tl = gsap.timeline();
   tl.to(
     ".container-image",
-    { clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" },
+    {
+      clipPath: "inset(0 0 0 0)",
+      opacity: 1,
+    },
     "-=1.1"
   );
+}
+
+//Project apperaing content
+function projectAppear() {
+  //Projects fadeout animation
+  let fade = gsap.utils.toArray(".project");
+
+  fade.forEach((project, i) => {
+    ScrollTrigger.create({
+      start: "top center",
+      trigger: project,
+      toggleClass: "active",
+      toggleActions: "play none none none", //first value reacts when the selected object is in the view of the viewer.
+    });
+  });
 }
 
 barba.init({
@@ -57,6 +78,11 @@ barba.init({
       async once(data) {
         //once the page is loaded at first
         contentAnimation();
+      },
+
+      async after(data) {
+        //Rerun the project appear code for it to run
+        projectAppear();
       },
     },
   ],
