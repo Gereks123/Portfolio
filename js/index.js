@@ -1,6 +1,10 @@
 "use strict";
 gsap.registerPlugin(ScrollTrigger);
-let tl = gsap.timeline({ yoyo: true, repeat: -1 }); //repeat -1 makes it an infinite loop
+let tl = gsap.timeline({
+  yoyo: true,
+  repeat: -1
+}); //repeat -1 makes it an infinite loop
+
 //gsap stagger delays the function
 //Letter "G" animation
 tl.from(".letter1", {
@@ -32,7 +36,6 @@ fade.forEach((project, i) => {
   });
 });
 
-/*Prevent links from redirecting*/
 
 /*This is not working YET!!!!!*/
 //gsap.utils.toArray("button").forEach((button) => {
@@ -44,7 +47,7 @@ fade.forEach((project, i) => {
 //});
 
 /*End of projects animation*/
-//Animating the letters in the container
+
 
 //Check out gsap DOC https://greensock.com/docs/v3/GSAP
 //Check out gsap common mistakes https://greensock.com/mistakes/
@@ -65,6 +68,16 @@ window.addEventListener("DOMContentLoaded", function () {
   setTimeout(function () {
     document.body.classList.remove("stop-scroll"); //Removes scroll lock when page is loaded.
     document.body.classList.add("loaded");
-    //gsap.from("#container-image", { x: 250, duration: 2, opacity: 0 }); //animation for the image to appear
+    gsap.from(".container-image", {
+      x: 250,
+      duration: 2,
+      opacity: 0
+    }); //animation for the image to appear
+    //Animate container name (German Eksi, a webdeveloper fadeIn)
+    gsap.from('.container_name', {
+      y: 250,
+      duration: 2,
+      opacity: 0
+    })
   }, 1000);
 });

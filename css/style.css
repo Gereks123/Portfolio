@@ -171,6 +171,7 @@ body {
 }
 
 /*Container_name animation to fade in the text*/
+/*
 .container_name {
   animation: reveal 2s cubic-bezier(0.3, 0.63, 0.14, 0.98) 1.1s;
 }
@@ -184,7 +185,9 @@ body {
     transform: translate(0, 0);
     opacity: 100%;
   }
-}
+}*/
+
+
 
 /***************************/
 /*Underneath the page lay the media queries*/
