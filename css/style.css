@@ -135,6 +135,7 @@ body {
   justify-content: space-between;
   max-width: 100%;
   z-index: 999;
+  padding: 0;
 }
 
 /******************************************************/
@@ -186,8 +187,6 @@ body {
     opacity: 100%;
   }
 }*/
-
-
 
 /***************************/
 /*Underneath the page lay the media queries*/
@@ -346,7 +345,7 @@ body {
 
   /*Start of body main*/
   .container-body-main,
-  .container-body-end {
+  .container-skills-end {
     display: flex;
     flex-direction: column;
     max-width: 100%;
@@ -355,7 +354,7 @@ body {
 
   /*Container head styles*/
   .container-body-main-head,
-  .container-body-end-head {
+  .container-skills-head {
     font-size: 1rem;
     margin: 4rem auto;
   }

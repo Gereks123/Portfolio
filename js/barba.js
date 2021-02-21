@@ -11,14 +11,16 @@ function pageTransition() {
     scaleY: 1,
     transformOrigin: "bottom left",
     stagger: 0.2,
+    width: "100%",
   }); //transformOrigin changes from where the content will start to transform, if ommited, it would start from the center.
   //Below code makes it fade away
   tl.to("ul.transition li", {
-    duration: 0.01,
+    duration: 0.2,
     scaleY: 0,
     transformOrigin: "bottom left",
     stagger: 0.1,
-    delay: 0.1,
+    delay: 0.2,
+    width: "100%",
   });
 }
 
@@ -33,17 +35,6 @@ function delay(i) {
   });
 }
 
-function contentAnimation() {
-  let tl = gsap.timeline();
-  tl.to(
-    ".container-image", {
-      clipPath: "inset(0 0 0 0)",
-      opacity: 1,
-    },
-    "-=1.1"
-  );
-}
-
 //Project apperaing content
 function projectAppear() {
   //Projects fadeout animation
@@ -52,16 +43,15 @@ function projectAppear() {
   gsap.from(".container-image", {
     x: 250,
     duration: 2,
-    opacity: 0
+    opacity: 0,
   }); //animation for the image to appear
 
-
   //Animate container name (German Eksi, a webdeveloper fadeIn)
-  gsap.from('.container_name', {
+  gsap.from(".container_name", {
     y: 250,
     duration: 2,
-    opacity: 0
-  })
+    opacity: 0,
+  });
 
   fade.forEach((project, i) => {
     ScrollTrigger.create({
@@ -71,34 +61,27 @@ function projectAppear() {
       toggleActions: "play none none none", //first value reacts when the selected object is in the view of the viewer.
     });
   });
-
-
 }
 
+//Barba INIT for the page transitions
 barba.init({
   sync: true, //asynchronous is true!
-  transitions: [{
-    async leave(data) {
-      const done = this.async();
+  transitions: [
+    {
+      async leave(data) {
+        const done = this.async();
 
-      pageTransition(); //This has to be firstly defined
-      await delay(1500);
-      done();
-    },
+        pageTransition(); //This has to be firstly defined
+        await delay(1300);
+        done();
+      },
 
-    async enter(data) {
-      contentAnimation();
+      async after(data) {
+        //Rerun the project appear code for it to run
+        projectAppear();
+      },
     },
-    async once(data) {
-      //once the page is loaded at first
-      contentAnimation();
-    },
-
-    async after(data) {
-      //Rerun the project appear code for it to run
-      projectAppear();
-    },
-  }, ],
+  ],
 });
 
 //Katse
