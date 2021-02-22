@@ -37,6 +37,16 @@ fade.forEach((project, i) => {
 });
 
 
+//Skills fade in
+ScrollTrigger.batch(".skill_img", {
+  onEnter: (elements, triggers) => {
+    gsap.to(elements, {opacity: 1, stagger: 0.15,});
+  },
+  onLeave: (elements, triggers) => {
+    gsap.to(elements, {opacity: 0, stagger: 0.15});
+  }
+});
+
 /*This is not working YET!!!!!*/
 //gsap.utils.toArray("button").forEach((button) => {
 //let hover = gsap.to(".close", {
