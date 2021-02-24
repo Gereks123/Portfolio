@@ -2,7 +2,7 @@
 gsap.registerPlugin(ScrollTrigger);
 let tl = gsap.timeline({
   yoyo: true,
-  repeat: -1
+  repeat: -1,
 }); //repeat -1 makes it an infinite loop
 
 //gsap stagger delays the function
@@ -23,7 +23,14 @@ tl.from(".letter2", {
 });
 
 //End of the letter animations
+/*
 
+
+fade : [Object | String | NodeList | Array] - The target(s) that you want wrapped in a flattened Array 
+(it can be selector text, objects, NodeList, jQuery objects, etc.
+*/
+
+//gsap.utils provides gsaps's own utility functions.
 /*Projects fadeout animation*/
 let fade = gsap.utils.toArray(".project");
 
@@ -36,28 +43,18 @@ fade.forEach((project, i) => {
   });
 });
 
+//Skills fade in for the iamges to appear.
 
-//Skills fade in
-ScrollTrigger.batch(".skill_img", {
-  onEnter: (elements, triggers) => {
-    gsap.to(elements, {opacity: 1, stagger: 0.15,});
-  },
-  onLeave: (elements, triggers) => {
-    gsap.to(elements, {opacity: 0, stagger: 0.15});
-  }
+let skills_tl = gsap.utils.toArray(".skill_img");
+
+skills_tl.forEach((skill_img, i) => {
+  ScrollTrigger.create({
+    start: "top center",
+    trigger: skill_img,
+    toggleClass: "active",
+    toggleActions: "play none none none",
+  });
 });
-
-/*This is not working YET!!!!!*/
-//gsap.utils.toArray("button").forEach((button) => {
-//let hover = gsap.to(".close", {
-//backgroundColor: "white",
-//});
-//button.addEventListener("mouseenter", () => hover.play());
-//button.addEventListener("mouseleave", () => hover.reverse());
-//});
-
-/*End of projects animation*/
-
 
 //Check out gsap DOC https://greensock.com/docs/v3/GSAP
 //Check out gsap common mistakes https://greensock.com/mistakes/
@@ -81,13 +78,13 @@ window.addEventListener("DOMContentLoaded", function () {
     gsap.from(".container-image", {
       x: 250,
       duration: 2,
-      opacity: 0
+      opacity: 0,
     }); //animation for the image to appear
     //Animate container name (German Eksi, a webdeveloper fadeIn)
-    gsap.from('.container_name', {
+    gsap.from(".container_name", {
       y: 250,
       duration: 2,
-      opacity: 0
-    })
+      opacity: 0,
+    });
   }, 1000);
 });
