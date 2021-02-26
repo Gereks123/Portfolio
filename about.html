@@ -5,9 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>German Eksi's Dungeon</title>
+    <!--Default CSS-->
     <link rel="stylesheet" href="css/style.css" />
+    <!--Barba CSS-->
+    <link rel="stylesheet" href="css/barba.css" />
+    <!--About CSS-->
+    <link rel="stylesheet" href="css/about.css" />
   </head>
-  <body data-barbara="wrapper">
+  <body data-barba="wrapper" class="stop-scroll">
+    <!--Transitions between the pages-->
+    <div class="align-to-top">
+      <ul class="transition">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+
     <div class="nav-placement">
       <header>
         <nav class="menu">
@@ -29,20 +45,67 @@
       </header>
     </div>
     <!--Here is the outlay for the about me page-->
-    <div data-barba="container" data-barba-namespace="about">
-      <div class="about-container">
-        <p class="about-container-info">
-          Sup! I'm <span>German</span>, I swear I'm not from Germany! I'm a
-          software developer, who really loves his job!
-        </p>
-
-        <!--ADD HERE MORE TEXT ABOUT YOURSELF!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+    <div class="container" data-barba="container" data-barba-namespace="about">
+      <div class="about-head">
+        <h2>What's up.</h2>
       </div>
-      <div class="cursor-follow"></div>
+      <!--About me content-->
+      <div class="wrapper-about">
+        <div class="about-image">
+          <img src="images/German.profile.jpg" id="contact-img" alt="" />
+        </div>
+        <div class="about-content">
+          <p>I'm German, I swear I'm not from Germany!</p>
+          <p>
+            I am a student at Tartu Vocational Education Center, studying
+            software developement.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--Footer stays out of barba container so when AJAX request is sent, the footer will not be updated-->
+    <div class="footer">
+      <div class="footer-1">
+        <p>Copyright &copy; German Eksi 2021</p>
+      </div>
+      <div class="footer-2">
+        <a href="https://github.com/Gereks123"
+          ><img
+            src="images/github_icon.png"
+            alt="github PNG"
+            class="footer-icon"
+        /></a>
+        <a href=""
+          ><img
+            src="images/linkedin_icon.png"
+            alt="linkedin PNG"
+            class="footer-icon"
+        /></a>
+        <a href="mailto:german.eksi@gmail.com"
+          ><p id="footer_email">german.eksi@gmail.com</p></a
+        >
+        <p></p>
+        <!--Icon attribution-->
+        <div class="attr">
+          Icons made by
+          <a href="https://www.freepik.com" title="Freepik">Freepik</a> from
+          <a href="https://www.flaticon.com/" title="Flaticon"
+            >www.flaticon.com</a
+          >
+        </div>
+      </div>
     </div>
     <!--GreenSock CDN-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <!--GreenSock ScrollTrigger-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+    <!-- Barba.js CDN-->
+    <script src="https://unpkg.com/@barba/core"></script>
     <!--Barba JS-->
     <script src="js/barba.js"></script>
+    <!--About JS-->
+    <script src="js/about.js"></script>
+    <!--Index JS-->
+    <script src="js/index.js"></script>
   </body>
 </html>

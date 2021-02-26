@@ -133,9 +133,12 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  height: 150px;
   max-width: 100%;
   z-index: 999;
   padding: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  margin-top: 0;
 }
 
 /******************************************************/
@@ -148,7 +151,7 @@ body {
 
 .container-head {
   margin-top: 250px;
-  margin-left: 200px;
+  margin-left: 50px;
   display: flex;
 }
 
@@ -231,7 +234,7 @@ body {
   /***********************************BODY*****************************************/
   .container-head {
     margin-top: 350px;
-    margin-left: 50px;
+    margin-left: 15px;
     z-index: -1;
   }
 
@@ -244,6 +247,7 @@ body {
   .container_name {
     z-index: 1;
     margin-top: 5.5rem;
+    margin-left: 10px;
   }
 
   .container_item-head h1 {
@@ -355,7 +359,7 @@ body {
   .container-image {
     width: 270px;
     height: 300px;
-  } 
+  }
 
   /*Container head styles*/
   .container-body-main-head,
@@ -387,9 +391,16 @@ body {
     max-width: 90%;
     max-height: 10rem;
     object-fit: cover; /*Make the image to cover size*/
+    /*Smooth drop-shadow-effect*/
+    box-shadow: 0 2.8px 2.2px rgba(255, 255, 255, 0.034),
+      0 6.7px 5.3px rgba(255, 255, 255, 0.048),
+      0 12.5px 10px rgba(255, 255, 255, 0.06),
+      0 22.3px 17.9px rgba(255, 255, 255, 0.072),
+      0 41.8px 33.4px rgba(255, 255, 255, 0.086),
+      0 100px 80px rgba(255, 255, 255, 0.12);
   }
 
-  .project-4-adjust{
+  .project-4-adjust {
     width: 400px;
   }
 
@@ -461,7 +472,7 @@ body {
     margin-top: 2rem;
   }
 
-  .footer-2 a{
+  .footer-2 a {
     text-decoration: none;
     color: white;
   }
@@ -472,10 +483,16 @@ body {
     margin: 3rem 0.7rem 2rem 0.7rem;
   }
 
-
-  .attr{
+  .attr {
     margin-top: 100px;
     font-size: 0.5rem;
+  }
+
+  #footer_email {
+    border: 2px solid white;
+    width: 50%;
+    margin: 0 auto;
+    padding: 5px;
   }
 }
 

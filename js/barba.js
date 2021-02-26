@@ -62,7 +62,6 @@ function projectAppear() {
     });
   });
 
-
   //Skills fade in for the iamges to appear.
 
   let skills_tl = gsap.utils.toArray(".skill_img");
@@ -77,23 +76,55 @@ function projectAppear() {
   });
 }
 
+/*About page function*/
+function aboutPage() {
+  const text = gsap.timeline();
+
+  text.from(".about-content p", 1.8, {
+    y: 100,
+    ease: "power4.out",
+    delay: 0.3,
+    skewY: 10,
+    opacity: 0,
+    stagger: 0.4,
+  });
+
+  text.from(
+    "#contact-img",
+    2,
+    {
+      x: -100,
+      ease: "power4.out",
+      skewY: 10,
+      opacity: 0,
+    },
+    0.75
+  );
+}
+
 //Barba INIT for the page transitions
 barba.init({
   sync: true, //asynchronous is true!
-  transitions: [{
-    async leave(data) {
-      const done = this.async();
+  transitions: [
+    {
+      async leave(data) {
+        const done = this.async();
 
-      pageTransition(); //This has to be firstly defined
-      await delay(1300);
-      done();
-    },
+        pageTransition(); //This has to be firstly defined
+        await delay(1000);
+        done();
+      },
 
-    async after(data) {
-      //Rerun the project appear code for it to run
-      projectAppear();
+      async enter(data) {
+        aboutPage();
+      },
+
+      async after(data) {
+        //Rerun the project appear code for it to run
+        projectAppear();
+      },
     },
-  }, ],
+  ],
 });
 
 //Katse
