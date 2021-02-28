@@ -378,7 +378,8 @@ body {
   .project-2,
   .project-3,
   .project-4,
-  .project-5 {
+  .project-5,
+  .project-6 {
     opacity: 0;
     width: 100%;
     max-width: 90%;

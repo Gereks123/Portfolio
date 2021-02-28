@@ -1,0 +1,67 @@
+@media only screen and (min-width: 479px) and (max-width: 1320px) {
+}
+
+@media only screen and (max-width: 479px) {
+  .project-display {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 15rem;
+  }
+
+  .projects img {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .projects {
+    position: relative;
+    width: 80%;
+    max-width: 100%;
+    margin: 20rem auto 1rem auto;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  #text {
+    text-decoration: none;
+    color: orange;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    left: 47%;
+    bottom: 20%;
+    z-index: 10;
+  }
+
+  /*With Simple Caption*/
+  .column#caption {
+    position: relative;
+  }
+
+  .column#caption .text {
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    opacity: 0;
+    transition: all 0.8s ease;
+  }
+
+  .column#caption:hover .text {
+    opacity: 1;
+  }
+
+  .column#caption .text h1 {
+    margin: 0;
+    color: white;
+  }
+
+  .column#caption:hover img {
+    -webkit-filter: sepia(90%);
+  }
+}

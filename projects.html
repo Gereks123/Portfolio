@@ -11,7 +11,10 @@
     <link rel="stylesheet" href="css/barba.css" />
     <!--About css-->
     <link rel="stylesheet" href="css/about.css" />
+    <!--Project css-->
+    <link rel="stylesheet" href="css/project.css" />
   </head>
+
   <body data-barba="wrapper" class="stop-scroll">
     <!--Transitions between the pages-->
     <div class="align-to-top">
@@ -48,7 +51,15 @@
       class="project-body"
       data-barba="container"
       data-barba-namespace="project"
-    ></div>
+    >
+      <div class="project-display">
+        <!-- Project-1 -->
+        <div class="projects">
+          <img src="images/projects/Hellik_page.jpg" alt="Hellik webpage" />
+          <a href="" id="text">Hellik</a>
+        </div>
+      </div>
+    </div>
     <!--Footer stays out of barba container so when AJAX request is sent, the footer will not be updated-->
     <div class="footer">
       <div class="footer-1">
@@ -71,8 +82,9 @@
           href="#"
           id="prevent"
           onclick="window.open('mailto:german.eksi@gmail.com')"
-          ><p id="footer_email">german.eksi@gmail.com</p></a
         >
+          <p id="footer_email">german.eksi@gmail.com</p>
+        </a>
         <p></p>
         <!--Icon attribution-->
         <div class="attr">
