@@ -70,6 +70,11 @@ skills_tl.forEach((skill_img, i) => {
   },
 }); */
 
+//When the page is refreshed, scroll back to the top
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+};
+
 //Display content when loaded
 window.addEventListener("DOMContentLoaded", function () {
   setTimeout(function () {

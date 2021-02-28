@@ -22,6 +22,11 @@ function pageTransition() {
     delay: 0.2,
     width: "100%",
   });
+
+  //When the page is refreshed, scroll back to the top
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  };
 }
 
 function delay(i) {
