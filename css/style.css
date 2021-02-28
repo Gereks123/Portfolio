@@ -355,6 +355,10 @@ body {
     line-height: 1.2;
   }
 
+  .container-skills-end {
+    margin-bottom: 15rem;
+  }
+
   .container-image {
     width: 270px;
     height: 300px;
@@ -373,7 +377,8 @@ body {
   .project-1,
   .project-2,
   .project-3,
-  .project-4 {
+  .project-4,
+  .project-5 {
     opacity: 0;
     width: 100%;
     max-width: 90%;
@@ -455,7 +460,7 @@ body {
     flex-direction: column;
     width: 100%;
     max-width: 100%;
-    margin: 250px auto 50px auto;
+    margin: 8rem auto 5rem auto;
     border-top: 2px solid white;
     font-size: 1rem;
   }
@@ -490,7 +495,7 @@ body {
   }
 
   #footer_email {
-    border: 2px solid white;
+    border: 2px solid #f89d13;
     width: 50%;
     margin: 0 auto;
     padding: 5px;

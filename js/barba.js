@@ -93,7 +93,7 @@ function aboutPage() {
     opacity: 0,
     stagger: 0.4,
   });
-
+  //Image Skew f
   text.from(
     "#contact-img",
     2,
@@ -105,8 +105,12 @@ function aboutPage() {
     },
     0.75
   );
-}
 
+  //Prevent contact button from sending back to top of the page
+  document.getElementById("prevent").addEventListener("click", function (e) {
+    e.preventDefault();
+  });
+}
 //Barba INIT for the page transitions
 barba.init({
   sync: true, //asynchronous is true!
@@ -114,7 +118,6 @@ barba.init({
     {
       async leave(data) {
         const done = this.async();
-
         pageTransition(); //This has to be firstly defined
         await delay(1000);
         done();
