@@ -75,6 +75,9 @@ window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 };
 
+//Scrolls to the top onload
+window.scrollTo(0, 0);
+
 //Display content when loaded
 window.addEventListener("DOMContentLoaded", function () {
   setTimeout(function () {

@@ -22,11 +22,6 @@ function pageTransition() {
     delay: 0.2,
     width: "100%",
   });
-
-  //When the page is refreshed, scroll back to the top
-  window.onbeforeunload = function () {
-    window.scrollTo(0, 0);
-  };
 }
 
 function delay(i) {
@@ -111,6 +106,18 @@ function aboutPage() {
     e.preventDefault();
   });
 }
+
+//this is a global hook for barba
+barba.hooks.enter((data) => {
+  //scroll to top of the page
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  };
+
+  window.scrollTo(0, 0);
+  //When the page is refreshed, scroll back to the top
+});
+
 //Barba INIT for the page transitions
 barba.init({
   sync: true, //asynchronous is true!

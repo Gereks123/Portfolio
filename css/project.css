@@ -1,7 +1,4 @@
-@media only screen and (min-width: 479px) and (max-width: 1320px) {
-}
-
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 568px) {
   .project-display {
     display: flex;
     width: 100%;
@@ -18,7 +15,8 @@
   }
 
   .projects {
-    position: relative;
+    display: flex;
+    flex-direction: column;
     width: 80%;
     max-width: 100%;
     margin: 20rem auto 1rem auto;
@@ -26,42 +24,187 @@
     margin: 0 auto;
   }
 
-  #text {
+  /*Contact button style*/
+  #display-button {
+    padding: 0.5rem;
+    width: 80%;
+    margin: 1rem auto 0 auto;
+    background-color: #f89d13;
+    border: none;
+    border-radius: 1rem;
+  }
+
+  #display-button a {
     text-decoration: none;
-    color: orange;
-    text-align: center;
-    width: 100%;
-    position: relative;
-    left: 47%;
-    bottom: 20%;
-    z-index: 10;
-  }
-
-  /*With Simple Caption*/
-  .column#caption {
-    position: relative;
-  }
-
-  .column#caption .text {
-    position: absolute;
-    left: 50%;
-    bottom: 100%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-    opacity: 0;
-    transition: all 0.8s ease;
-  }
-
-  .column#caption:hover .text {
-    opacity: 1;
-  }
-
-  .column#caption .text h1 {
-    margin: 0;
     color: white;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1rem;
+    padding: 0.5rem 4.3rem 0.5rem 4.3rem;
   }
 
-  .column#caption:hover img {
-    -webkit-filter: sepia(90%);
+  #display-button:focus {
+    border-color: none;
+  }
+
+  .text-box {
+    margin-top: 2rem;
+    border-left: 2px solid #f89d13;
+    border-bottom: 2px solid #f89d13;
+    letter-spacing: 0.5;
+  }
+
+  .text-box p {
+    margin-left: 5px;
+    font-size: 1rem;
+  }
+
+  .top-margin {
+    margin-top: 10rem;
+  }
+
+  .course {
+    border-bottom: 2px solid #f89d13;
+  }
+}
+
+/*Tablet view*/
+@media only screen and (min-width: 568px) and (max-width: 1320px) {
+  .project-display {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 15rem;
+  }
+
+  .projects img {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 100%;
+    margin: 20rem auto 1rem auto;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  /*Contact button style*/
+  #display-button {
+    padding: 0.5rem;
+    width: 80%;
+    margin: 1rem auto 0 auto;
+    background-color: #f89d13;
+    border: none;
+    border-radius: 1rem;
+  }
+
+  #display-button a {
+    text-decoration: none;
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1rem;
+    padding: 0.5rem 4.3rem 0.5rem 4.3rem;
+  }
+
+  #display-button:focus {
+    border-color: none;
+  }
+
+  .text-box {
+    margin-top: 2rem;
+    border-left: 2px solid #f89d13;
+    border-bottom: 2px solid #f89d13;
+    letter-spacing: 0.5;
+  }
+
+  .text-box p {
+    margin-left: 5px;
+    font-size: 1.3rem;
+    width: 80%;
+  }
+
+  .top-margin {
+    margin-top: 10rem;
+  }
+
+  .course {
+    border-bottom: 2px solid #f89d13;
+  }
+}
+
+/*Laptop/monitor views*/
+@media only screen and (min-width: 1320px) {
+  .project-display {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 15rem;
+  }
+
+  .projects img {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 100%;
+    margin: 20rem auto 1rem auto;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  /*Contact button style*/
+  #display-button {
+    padding: 0.5rem;
+    width: 50%;
+    margin: 1rem auto 0 auto;
+    background-color: #f89d13;
+    border: none;
+    border-radius: 1rem;
+  }
+
+  #display-button a {
+    text-decoration: none;
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1rem;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+  }
+
+  #display-button:focus {
+    border-color: none;
+  }
+
+  .text-box {
+    margin-top: 2rem;
+    border-left: 2px solid #f89d13;
+    border-bottom: 2px solid #f89d13;
+    letter-spacing: 0.5;
+  }
+
+  .text-box p {
+    margin-left: 5px;
+    font-size: 1.3rem;
+    width: 80%;
+  }
+
+  .top-margin {
+    margin-top: 10rem;
+  }
+
+  .course {
+    border-bottom: 2px solid #f89d13;
   }
 }

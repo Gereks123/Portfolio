@@ -1,8 +1,4 @@
-/*Tablet*/
-@media only screen and (min-width: 479px) and (max-width: 1320px) {
-}
-
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 568px) {
   /*About head section*/
   body {
     font-size: 0.625rem;
@@ -173,15 +169,400 @@
     color: white;
     font-family: "Bebas Neue", sans-serif;
     font-size: 1rem;
-    padding: 0.5rem 2.5rem 0.5rem 2.5rem;
+    padding: 0.5rem 4.3rem 0.5rem 4.3rem;
   }
 
   #contact-button:focus {
-    border: none;
+    border-color: none;
   }
 
   .contant-about {
     margin-bottom: 2rem;
+  }
+
+  .onlyBig {
+    display: none;
+  }
+
+  /*End of Main content*/
+}
+
+/*Tablet*/
+@media only screen and (min-width: 568px) and (max-width: 1320px) {
+  /*About head section*/
+  body {
+    font-size: 0.625rem;
+  }
+
+  .about-head,
+  .contant-head {
+    display: flex;
+    margin-top: 200px;
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    font-size: 1.1rem;
+  }
+
+  .contant-head {
+    margin: 7rem auto 5rem auto !important;
+    justify-content: center;
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .contant-head h4 {
+    font-weight: 300;
+    font-size: 1rem;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .contant-head {
+    flex-direction: column;
+  }
+
+  .about-head h2 {
+    position: relative;
+    left: 3rem;
+  }
+
+  .about-image {
+    width: 50%;
+    height: 100%;
+  }
+
+  .about-image img {
+    max-width: 70%;
+    max-height: 100%;
+    margin: 0 auto;
+  }
+
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    max-width: 90%;
+    height: 100%;
+    font-size: 1.3rem;
+    overflow: hidden;
+    margin-left: 10px;
+    margin-right: 2rem;
+  }
+
+  .wrapper-about {
+    display: flex;
+    margin-top: 5rem;
+  }
+
+  /*End of head section*/
+
+  /*Start of Main content*/
+  .main-content,
+  .intro {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 90%;
+    height: 100%;
+    margin: 13rem auto 3rem auto;
+  }
+
+  .main-head {
+    font-size: 0.9rem;
+    border-bottom: 2px solid #f89d13;
+  }
+
+  .value-wrapper,
+  .passion,
+  .contant-about {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
+  .passion {
+    flex-direction: column;
+    font-size: 1.1rem;
+    letter-spacing: 0.7;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .value-wrapper p {
+    font-size: 1.1rem;
+    line-height: 1.3;
+  }
+
+  .value-wrapper h1 {
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+
+  .value-content-1,
+  .value-content-2,
+  .value-content-3 {
+    border-bottom: 3px solid #f89d13;
+  }
+
+  .value-content-1,
+  .value-content-2,
+  .value-content-3,
+  .value-content-4 {
+    width: 50%;
+    height: 100%;
+  }
+
+  .value-content-1,
+  .value-content-3 {
+    margin-left: 15px;
+    border-right: 3px solid #f89d13;
+  }
+
+  .value-content-2,
+  .value-content-4 {
+    margin-right: 10px;
+  }
+
+  .value-content-2 p,
+  .value-content-4 p {
+    margin-left: 10px;
+  }
+
+  .value-content-1 p,
+  .value-content-3 p {
+    margin-right: 10px;
+  }
+
+  .value-content-2 h1,
+  .value-content-4 h1 {
+    margin-left: 10px;
+  }
+
+  .color-orange {
+    color: #f89d13;
+  }
+
+  /*Contact button style*/
+  #contact-button {
+    padding: 0.5rem;
+    width: 50%;
+    margin: 3rem auto 0 auto;
+    background-color: #f89d13;
+    border: none;
+    border-radius: 1rem;
+  }
+
+  #contact-button a {
+    text-decoration: none;
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1rem;
+    padding: 0.5rem 4.3rem 0.5rem 4.3rem;
+  }
+
+  #contact-button:focus {
+    border-color: none;
+  }
+
+  .contant-about {
+    margin-bottom: 2rem;
+  }
+
+  .onlyBig {
+    margin-top: 3rem;
+    border-bottom: 2px solid #f89d13;
+  }
+
+  /*End of Main content*/
+}
+
+/*Laptop/monitor views*/
+@media only screen and (min-width: 1320px) {
+  /*About head section*/
+  body {
+    font-size: 0.625rem;
+  }
+
+  .about-head,
+  .contant-head {
+    display: flex;
+    margin-top: 200px;
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    font-size: 1.1rem;
+  }
+
+  .contant-head {
+    margin: 7rem auto 5rem auto !important;
+    justify-content: center;
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .contant-head h4 {
+    font-weight: 300;
+    font-size: 1rem;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .contant-head {
+    flex-direction: column;
+  }
+
+  .about-head h2 {
+    position: relative;
+    left: 3rem;
+  }
+
+  .about-image {
+    width: 50%;
+    height: 100%;
+  }
+
+  .about-image img {
+    max-width: 60%;
+    max-height: 100%;
+    margin: 0 auto;
+  }
+
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    max-width: 90%;
+    height: 100%;
+    font-size: 1.3rem;
+    overflow: hidden;
+    margin: 10% 2rem 0 1rem;
+  }
+
+  .wrapper-about {
+    display: flex;
+    margin-top: 5rem;
+  }
+
+  /*End of head section*/
+
+  /*Start of Main content*/
+  .main-content,
+  .intro {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 90%;
+    height: 100%;
+    margin: 13rem auto 3rem auto;
+  }
+
+  .main-head {
+    font-size: 0.9rem;
+    border-bottom: 2px solid #f89d13;
+  }
+
+  .value-wrapper,
+  .passion,
+  .contant-about {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    font-size: 1.3rem !important;
+  }
+
+  .passion {
+    flex-direction: column;
+    font-size: 1.1rem;
+    letter-spacing: 0.7;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .value-wrapper p {
+    font-size: 1.3rem;
+    line-height: 1.3;
+  }
+
+  .value-wrapper h1 {
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 1.8rem;
+  }
+
+  .value-content-1,
+  .value-content-2,
+  .value-content-3 {
+    border-bottom: 3px solid #f89d13;
+  }
+
+  .value-content-1,
+  .value-content-2,
+  .value-content-3,
+  .value-content-4 {
+    width: 50%;
+    height: 100%;
+  }
+
+  .value-content-1,
+  .value-content-3 {
+    margin-left: 15px;
+    border-right: 3px solid #f89d13;
+  }
+
+  .value-content-2,
+  .value-content-4 {
+    margin-right: 10px;
+  }
+
+  .value-content-2 p,
+  .value-content-4 p {
+    margin-left: 10px;
+  }
+
+  .value-content-1 p,
+  .value-content-3 p {
+    margin-right: 10px;
+  }
+
+  .value-content-2 h1,
+  .value-content-4 h1 {
+    margin-left: 10px;
+  }
+
+  .color-orange {
+    color: #f89d13;
+  }
+
+  /*Contact button style*/
+  #contact-button {
+    padding: 0.5rem;
+    width: 50%;
+    margin: 3rem auto 0 auto;
+    background-color: #f89d13;
+    border: none;
+    border-radius: 1rem;
+  }
+
+  #contact-button a {
+    text-decoration: none;
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1rem;
+    padding: 0.5rem 4.3rem 0.5rem 4.3rem;
+  }
+
+  #contact-button:focus {
+    border-color: none;
+  }
+
+  .contant-about {
+    margin-bottom: 2rem;
+  }
+
+  .onlyBig {
+    margin-top: 3rem;
+    border-bottom: 2px solid #f89d13;
   }
 
   /*End of Main content*/
